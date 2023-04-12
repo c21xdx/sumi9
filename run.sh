@@ -2,5 +2,5 @@
 
 sed -i "s/8080/$PORT/" ./Caddyfile
 chmod +x ./caddy
-./caddy run
+./caddy start
 node  ./dist-node/server/index.js
