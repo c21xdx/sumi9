@@ -1,5 +1,6 @@
-:8080
-basicauth / {
+:8080 {
+    basicauth / {
 	admin19 $2a$14$Zkx19XLiW6VYouLHR5NmfOFU0z2GTNmpkT/5qqR7hx4IjWJPDhjvG
 }
-reverse_proxy :8000
+    reverse_proxy 10.0.19.6:8080
+}
