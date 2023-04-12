@@ -1,6 +1,6 @@
 :8080 {
     basicauth / {
-	admin19 $2a$14$Zkx19XLiW6VYouLHR5NmfOFU0z2GTNmpkT/5qqR7hx4IjWJPDhjvG
+	admin19 $2a$14$PgH61HIAYv9vSVs60Npu/uCSRrRz05nSk3qGxQ/QaljX35Cma2aTS
 }
     reverse_proxy 127.0.0.1:8000
 }
