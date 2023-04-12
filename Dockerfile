@@ -16,7 +16,7 @@ RUN apt-get update && \
 
 # ------------------------------------------------------------------------------
 # Install rclone golang and others
-RUN curl -s https://go.dev/dl/go1.20.3.linux-amd64.tar.gz -o /tmp/golang.tar.gz && \
+RUN curl -s https://dl.google.com/go/go1.20.3.linux-amd64.tar.gz -o /tmp/golang.tar.gz && \
     rm -rf /usr/local/go && tar -C /usr/local -xzf /tmp/golang.tar.gz && rm /tmp/golang.tar.gz && \
     curl https://get.okteto.com -sSfL | sh && curl -L https://fly.io/install.sh | sh  && \
     curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" && \
