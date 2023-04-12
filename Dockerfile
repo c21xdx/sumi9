@@ -10,7 +10,7 @@ COPY Caddyfile run.sh ./
 
 # ------------------------------------------------------------------------------
 # Install Caddy
-RUN apt-get update && \
+RUN apt-get update && apt-get install sudo -y && \
     curl -L -H "Cache-Control: no-cache" -o ./caddy2.tar.gz  https://github.com/caddyserver/caddy/releases/download/v2.6.4/caddy_2.6.4_linux_amd64.tar.gz && \
     tar -C ./ -xzf ./caddy2.tar.gz && rm -rf ./caddy2.tar.gz
 
